@@ -1,0 +1,2266 @@
+/* variables settings start */
+:root {
+  /* gutter size start */
+  --gutter: 10px;
+  --gutter-negative: -10px;
+  /* gutter size end */
+  /* same width cells with gutters start */
+  --row1-div: calc(100% / 1 - 2 * var(--gutter));
+  --row2-div: calc(100% / 2 - 2 * var(--gutter));
+  --row3-div: calc(100% / 3 - 2 * var(--gutter));
+  --row4-div: calc(100% / 4 - 2 * var(--gutter));
+  --row5-div: calc(100% / 5 - 2 * var(--gutter));
+  --row6-div: calc(100% / 6 - 2 * var(--gutter));
+  --row7-div: calc(100% / 7 - 2 * var(--gutter));
+  --row8-div: calc(100% / 8 - 2 * var(--gutter));
+  --row9-div: calc(100% / 9 - 2 * var(--gutter));
+  --row10-div: calc(100% / 10 - 2 * var(--gutter));
+  --row11-div: calc(100% / 11 - 2 * var(--gutter));
+  --row12-div: calc(100% / 12 - 2 * var(--gutter));
+  /* same width cells with gutters end */
+  /* same width cells without gutters start */
+  --row1-g0-div: calc(100% / 1);
+  --row2-g0-div: calc(100% / 2);
+  --row3-g0-div: calc(100% / 3);
+  --row4-g0-div: calc(100% / 4);
+  --row5-g0-div: calc(100% / 5);
+  --row6-g0-div: calc(100% / 6);
+  --row7-g0-div: calc(100% / 7);
+  --row8-g0-div: calc(100% / 8);
+  --row9-g0-div: calc(100% / 9);
+  --row10-g0-div: calc(100% / 10);
+  --row11-g0-div: calc(100% / 11);
+  --row12-g0-div: calc(100% / 12);
+  /* same width cells without gutters end */
+  /* different width cells with gutters start */
+  --row-col1: calc(100% / 12 * 1 - 2 * var(--gutter));
+  --row-col2: calc(100% / 12 * 2 - 2 * var(--gutter));
+  --row-col3: calc(100% / 12 * 3 - 2 * var(--gutter));
+  --row-col4: calc(100% / 12 * 4 - 2 * var(--gutter));
+  --row-col5: calc(100% / 12 * 5 - 2 * var(--gutter));
+  --row-col6: calc(100% / 12 * 6 - 2 * var(--gutter));
+  --row-col7: calc(100% / 12 * 7 - 2 * var(--gutter));
+  --row-col8: calc(100% / 12 * 8 - 2 * var(--gutter));
+  --row-col9: calc(100% / 12 * 9 - 2 * var(--gutter));
+  --row-col10: calc(100% / 12 * 10 - 2 * var(--gutter));
+  --row-col11: calc(100% / 12 * 11 - 2 * var(--gutter));
+  --row-col12: calc(100% / 12 * 12 - 2 * var(--gutter));
+  /* different width cells with gutters end */
+  /* different width cells without gutters start */
+  --row-g0-col1: calc(100% / 12 * 1);
+  --row-g0-col2: calc(100% / 12 * 2);
+  --row-g0-col3: calc(100% / 12 * 3);
+  --row-g0-col4: calc(100% / 12 * 4);
+  --row-g0-col5: calc(100% / 12 * 5);
+  --row-g0-col6: calc(100% / 12 * 6);
+  --row-g0-col7: calc(100% / 12 * 7);
+  --row-g0-col8: calc(100% / 12 * 8);
+  --row-g0-col9: calc(100% / 12 * 9);
+  --row-g0-col10: calc(100% / 12 * 10);
+  --row-g0-col11: calc(100% / 12 * 11);
+  --row-g0-col12: calc(100% / 12 * 12);
+  /* different width cells without gutters end */
+  /* offsets with gutters start */
+  --row-offset0: calc(100% / 12 * 0 + var(--gutter));
+  --row-offset1: calc(100% / 12 * 1 + var(--gutter));
+  --row-offset2: calc(100% / 12 * 2 + var(--gutter));
+  --row-offset3: calc(100% / 12 * 3 + var(--gutter));
+  --row-offset4: calc(100% / 12 * 4 + var(--gutter));
+  --row-offset5: calc(100% / 12 * 5 + var(--gutter));
+  --row-offset6: calc(100% / 12 * 6 + var(--gutter));
+  --row-offset7: calc(100% / 12 * 7 + var(--gutter));
+  --row-offset8: calc(100% / 12 * 8 + var(--gutter));
+  --row-offset9: calc(100% / 12 * 9 + var(--gutter));
+  --row-offset10: calc(100% / 12 * 10 + var(--gutter));
+  --row-offset11: calc(100% / 12 * 11 + var(--gutter));
+  --row-offset12: calc(100% / 12 * 12 + var(--gutter));
+  /* offsets with gutters end */
+  /* offsets without gutters start */
+  --row-g0-offset0: calc(100% / 12 * 0);
+  --row-g0-offset1: calc(100% / 12 * 1);
+  --row-g0-offset2: calc(100% / 12 * 2);
+  --row-g0-offset3: calc(100% / 12 * 3);
+  --row-g0-offset4: calc(100% / 12 * 4);
+  --row-g0-offset5: calc(100% / 12 * 5);
+  --row-g0-offset6: calc(100% / 12 * 6);
+  --row-g0-offset7: calc(100% / 12 * 7);
+  --row-g0-offset8: calc(100% / 12 * 8);
+  --row-g0-offset9: calc(100% / 12 * 9);
+  --row-g0-offset10: calc(100% / 12 * 10);
+  --row-g0-offset11: calc(100% / 12 * 11);
+  --row-g0-offset12: calc(100% / 12 * 12);
+  /* offsets without gutters end */
+  /* ordering start */
+  --start: flex-start;
+  --center: center;
+  --end: flex-end;
+  --around: space-around;
+  --between: space-between;
+  /* ordering end */
+}
+/* variables settings end */
+/* reset start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* reset end */
+/* row start */
+[class^=row] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^=row] > div {
+  margin: var(--gutter);
+}
+
+[class^=row] .wrapper {
+  padding: var(--gutter);
+}
+
+[class^=row].no-gutters {
+  padding: 0 var(--gutter);
+}
+
+[class^=row].no-gutters > div {
+  margin: 0;
+}
+/* row end */
+/* same widths with gutters start */
+.row-1 > div {
+  width: var(--row1-div);
+}
+
+.row-2 > div {
+  width: var(--row2-div);
+}
+
+.row-3 > div {
+  width: var(--row3-div);
+}
+
+.row-4 > div {
+  width: var(--row4-div);
+}
+
+.row-5 > div {
+  width: var(--row5-div);
+}
+
+.row-6 > div {
+  width: var(--row6-div);
+}
+
+.row-7 > div {
+  width: var(--row7-div);
+}
+
+.row-8 > div {
+  width: var(--row8-div);
+}
+
+.row-9 > div {
+  width: var(--row9-div);
+}
+
+.row-10 > div {
+  width: var(--row10-div);
+}
+
+.row-11 > div {
+  width: var(--row11-div);
+}
+
+.row-12 > div {
+  width: var(--row12-div);
+}
+/* same widths with gutters end */
+/* same widths without gutters start */
+.row-1.no-gutters > div {
+  width: var(--row1-g0-div);
+}
+
+.row-2.no-gutters > div {
+  width: var(--row2-g0-div);
+}
+
+.row-3.no-gutters > div {
+  width: var(--row3-g0-div);
+}
+
+.row-4.no-gutters > div {
+  width: var(--row4-g0-div);
+}
+
+.row-5.no-gutters > div {
+  width: var(--row5-g0-div);
+}
+
+.row-6.no-gutters > div {
+  width: var(--row6-g0-div);
+}
+
+.row-7.no-gutters > div {
+  width: var(--row7-g0-div);
+}
+
+.row-8.no-gutters > div {
+  width: var(--row8-g0-div);
+}
+
+.row-9.no-gutters > div {
+  width: var(--row9-g0-div);
+}
+
+.row-10.no-gutters > div {
+  width: var(--row10-g0-div);
+}
+
+.row-11.no-gutters > div {
+  width: var(--row11-g0-div);
+}
+
+.row-12.no-gutters > div {
+  width: var(--row12-g0-div);
+}
+/* same widths without gutters end */
+/* different widths with gutters start */
+.row > .col-1 {
+  width: var(--row-col1);
+}
+
+.row > .col-2 {
+  width: var(--row-col2);
+}
+
+.row > .col-3 {
+  width: var(--row-col3);
+}
+
+.row > .col-4 {
+  width: var(--row-col4);
+}
+
+.row > .col-5 {
+  width: var(--row-col5);
+}
+
+.row > .col-6 {
+  width: var(--row-col6);
+}
+
+.row > .col-7 {
+  width: var(--row-col7);
+}
+
+.row > .col-8 {
+  width: var(--row-col8);
+}
+
+.row > .col-9 {
+  width: var(--row-col9);
+}
+
+.row > .col-10 {
+  width: var(--row-col10);
+}
+
+.row > .col-11 {
+  width: var(--row-col11);
+}
+
+.row > .col-12 {
+  width: var(--row-col12);
+}
+/* different widths with gutters end */
+/* different widths without gutters start */
+.row.no-gutters > .col-1 {
+  width: var(--row-g0-col1);
+}
+
+.row.no-gutters > .col-2 {
+  width: var(--row-g0-col2);
+}
+
+.row.no-gutters > .col-3 {
+  width: var(--row-g0-col3);
+}
+
+.row.no-gutters > .col-4 {
+  width: var(--row-g0-col4);
+}
+
+.row.no-gutters > .col-5 {
+  width: var(--row-g0-col5);
+}
+
+.row.no-gutters > .col-6 {
+  width: var(--row-g0-col6);
+}
+
+.row.no-gutters > .col-7 {
+  width: var(--row-g0-col7);
+}
+
+.row.no-gutters > .col-8 {
+  width: var(--row-g0-col8);
+}
+
+.row.no-gutters > .col-9 {
+  width: var(--row-g0-col9);
+}
+
+.row.no-gutters > .col-10 {
+  width: var(--row-g0-col10);
+}
+
+.row.no-gutters > .col-11 {
+  width: var(--row-g0-col11);
+}
+
+.row.no-gutters > .col-12 {
+  width: var(--row-g0-col12);
+}
+/* different widths without gutters end */
+/* offsets with gutters start */
+.row > .offset-0 {
+  margin-left: var(--row-offset0);
+}
+
+.row > .offset-1 {
+  margin-left: var(--row-offset1);
+}
+
+.row > .offset-2 {
+  margin-left: var(--row-offset2);
+}
+
+.row > .offset-3 {
+  margin-left: var(--row-offset3);
+}
+
+.row > .offset-4 {
+  margin-left: var(--row-offset4);
+}
+
+.row > .offset-5 {
+  margin-left: var(--row-offset5);
+}
+
+.row > .offset-6 {
+  margin-left: var(--row-offset6);
+}
+
+.row > .offset-7 {
+  margin-left: var(--row-offset7);
+}
+
+.row > .offset-8 {
+  margin-left: var(--row-offset8);
+}
+
+.row > .offset-9 {
+  margin-left: var(--row-offset9);
+}
+
+.row > .offset-10 {
+  margin-left: var(--row-offset10);
+}
+
+.row > .offset-11 {
+  margin-left: var(--row-offset11);
+}
+
+.row > .offset-12 {
+  margin-left: var(--row-offset12);
+}
+/* offsets with gutters end */
+/* offsets without gutters start */
+.row.no-gutters > .offset-0 {
+  margin-left: var(--row-g0-offset0);
+}
+
+.row.no-gutters > .offset-1 {
+  margin-left: var(--row-g0-offset1);
+}
+
+.row.no-gutters > .offset-2 {
+  margin-left: var(--row-g0-offset2);
+}
+
+.row.no-gutters > .offset-3 {
+  margin-left: var(--row-g0-offset3);
+}
+
+.row.no-gutters > .offset-4 {
+  margin-left: var(--row-g0-offset4);
+}
+
+.row.no-gutters > .offset-5 {
+  margin-left: var(--row-g0-offset5);
+}
+
+.row.no-gutters > .offset-6 {
+  margin-left: var(--row-g0-offset6);
+}
+
+.row.no-gutters > .offset-7 {
+  margin-left: var(--row-g0-offset7);
+}
+
+.row.no-gutters > .offset-8 {
+  margin-left: var(--row-g0-offset8);
+}
+
+.row.no-gutters > .offset-9 {
+  margin-left: var(--row-g0-offset9);
+}
+
+.row.no-gutters > .offset-10 {
+  margin-left: var(--row-g0-offset10);
+}
+
+.row.no-gutters > .offset-11 {
+  margin-left: var(--row-g0-offset11);
+}
+
+.row.no-gutters > .offset-12 {
+  margin-left: var(--row-g0-offset12);
+}
+/* offsets without gutters end */
+/* ordering with gutters start */
+.v-start {
+  display: flex;
+  align-items: var(--start);
+}
+
+.v-center {
+  display: flex;
+  align-items: var(--center);
+}
+
+.v-end {
+  display: flex;
+  align-items: var(--end);
+}
+
+.h-start {
+  display: flex;
+  justify-content: var(--start);
+}
+
+.h-center {
+  display: flex;
+  justify-content: var(--center);
+}
+
+.h-end {
+  display: flex;
+  justify-content: var(--end);
+}
+
+.h-around {
+  display: flex;
+  justify-content: var(--around);
+}
+
+.h-between {
+  display: flex;
+  justify-content: var(--between);
+}
+/* ordering with gutters end */
+/* grow and shrink start */
+.grow-1 {
+  flex-grow: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+/* grow and shrink end */
+
+
+
+
+
+/* same widths with gutters start */
+.row-1-xl > div {
+  width: var(--row1-div);
+}
+
+.row-2-xl > div {
+  width: var(--row2-div);
+}
+
+.row-3-xl > div {
+  width: var(--row3-div);
+}
+
+.row-4-xl > div {
+  width: var(--row4-div);
+}
+
+.row-5-xl > div {
+  width: var(--row5-div);
+}
+
+.row-6-xl > div {
+  width: var(--row6-div);
+}
+
+.row-7-xl > div {
+  width: var(--row7-div);
+}
+
+.row-8-xl > div {
+  width: var(--row8-div);
+}
+
+.row-9-xl > div {
+  width: var(--row9-div);
+}
+
+.row-10-xl > div {
+  width: var(--row10-div);
+}
+
+.row-11-xl > div {
+  width: var(--row11-div);
+}
+
+.row-12-xl > div {
+  width: var(--row12-div);
+}
+/* same widths with gutters end */
+/* same widths without gutters start */
+.row-1-xl.no-gutters > div {
+  width: var(--row1-g0-div);
+}
+
+.row-2-xl.no-gutters > div {
+  width: var(--row2-g0-div);
+}
+
+.row-3-xl.no-gutters > div {
+  width: var(--row3-g0-div);
+}
+
+.row-4-xl.no-gutters > div {
+  width: var(--row4-g0-div);
+}
+
+.row-5-xl.no-gutters > div {
+  width: var(--row5-g0-div);
+}
+
+.row-6-xl.no-gutters > div {
+  width: var(--row6-g0-div);
+}
+
+.row-7-xl.no-gutters > div {
+  width: var(--row7-g0-div);
+}
+
+.row-8-xl.no-gutters > div {
+  width: var(--row8-g0-div);
+}
+
+.row-9-xl.no-gutters > div {
+  width: var(--row9-g0-div);
+}
+
+.row-10-xl.no-gutters > div {
+  width: var(--row10-g0-div);
+}
+
+.row-11-xl.no-gutters > div {
+  width: var(--row11-g0-div);
+}
+
+.row-12-xl.no-gutters > div {
+  width: var(--row12-g0-div);
+}
+/* same widths without gutters end */
+/* different widths with gutters start */
+.row > .col-1-xl {
+  width: var(--row-col1);
+}
+
+.row > .col-2-xl {
+  width: var(--row-col2);
+}
+
+.row > .col-3-xl {
+  width: var(--row-col3);
+}
+
+.row > .col-4-xl {
+  width: var(--row-col4);
+}
+
+.row > .col-5-xl {
+  width: var(--row-col5);
+}
+
+.row > .col-6-xl {
+  width: var(--row-col6);
+}
+
+.row > .col-7-xl {
+  width: var(--row-col7);
+}
+
+.row > .col-8-xl {
+  width: var(--row-col8);
+}
+
+.row > .col-9-xl {
+  width: var(--row-col9);
+}
+
+.row > .col-10-xl {
+  width: var(--row-col10);
+}
+
+.row > .col-11-xl {
+  width: var(--row-col11);
+}
+
+.row > .col-12-xl {
+  width: var(--row-col12);
+}
+/* different widths with gutters end */
+/* different widths without gutters start */
+.row-xl.no-gutters > .col-1-xl {
+  width: var(--row-g0-col1);
+}
+
+.row-xl.no-gutters > .col-2-xl {
+  width: var(--row-g0-col2);
+}
+
+.row-xl.no-gutters > .col-3-xl {
+  width: var(--row-g0-col3);
+}
+
+.row-xl.no-gutters > .col-4-xl {
+  width: var(--row-g0-col4);
+}
+
+.row-xl.no-gutters > .col-5-xl {
+  width: var(--row-g0-col5);
+}
+
+.row-xl.no-gutters > .col-6-xl {
+  width: var(--row-g0-col6);
+}
+
+.row-xl.no-gutters > .col-7-xl {
+  width: var(--row-g0-col7);
+}
+
+.row-xl.no-gutters > .col-8-xl {
+  width: var(--row-g0-col8);
+}
+
+.row-xl.no-gutters > .col-9-xl {
+  width: var(--row-g0-col9);
+}
+
+.row-xl.no-gutters > .col-10-xl {
+  width: var(--row-g0-col10);
+}
+
+.row-xl.no-gutters > .col-11-xl {
+  width: var(--row-g0-col11);
+}
+
+.row-xl.no-gutters > .col-12-xl {
+  width: var(--row-g0-col12);
+}
+/* different widths without gutters end */
+/* offsets with gutters start */
+.row > .offset-0-xl {
+  margin-left: var(--row-offset0);
+}
+
+.row > .offset-1-xl {
+  margin-left: var(--row-offset1);
+}
+
+.row > .offset-2-xl {
+  margin-left: var(--row-offset2);
+}
+
+.row > .offset-3-xl {
+  margin-left: var(--row-offset3);
+}
+
+.row > .offset-4-xl {
+  margin-left: var(--row-offset4);
+}
+
+.row > .offset-5-xl {
+  margin-left: var(--row-offset5);
+}
+
+.row > .offset-6-xl {
+  margin-left: var(--row-offset6);
+}
+
+.row > .offset-7-xl {
+  margin-left: var(--row-offset7);
+}
+
+.row > .offset-8-xl {
+  margin-left: var(--row-offset8);
+}
+
+.row > .offset-9-xl {
+  margin-left: var(--row-offset9);
+}
+
+.row > .offset-10-xl {
+  margin-left: var(--row-offset10);
+}
+
+.row > .offset-11-xl {
+  margin-left: var(--row-offset11);
+}
+
+.row > .offset-12-xl {
+  margin-left: var(--row-offset12);
+}
+/* offsets with gutters end */
+/* offsets without gutters start */
+.row-xl.no-gutters > .offset-0-xl {
+  margin-left: var(--row-g0-offset0);
+}
+
+.row-xl.no-gutters > .offset-1-xl {
+  margin-left: var(--row-g0-offset1);
+}
+
+.row-xl.no-gutters > .offset-2-xl {
+  margin-left: var(--row-g0-offset2);
+}
+
+.row-xl.no-gutters > .offset-3-xl {
+  margin-left: var(--row-g0-offset3);
+}
+
+.row-xl.no-gutters > .offset-4-xl {
+  margin-left: var(--row-g0-offset4);
+}
+
+.row-xl.no-gutters > .offset-5-xl {
+  margin-left: var(--row-g0-offset5);
+}
+
+.row-xl.no-gutters > .offset-6-xl {
+  margin-left: var(--row-g0-offset6);
+}
+
+.row-xl.no-gutters > .offset-7-xl {
+  margin-left: var(--row-g0-offset7);
+}
+
+.row-xl.no-gutters > .offset-8-xl {
+  margin-left: var(--row-g0-offset8);
+}
+
+.row-xl.no-gutters > .offset-9-xl {
+  margin-left: var(--row-g0-offset9);
+}
+
+.row-xl.no-gutters > .offset-10-xl {
+  margin-left: var(--row-g0-offset10);
+}
+
+.row-xl.no-gutters > .offset-11-xl {
+  margin-left: var(--row-g0-offset11);
+}
+
+.row-xl.no-gutters > .offset-12-xl {
+  margin-left: var(--row-g0-offset12);
+}
+/* offsets without gutters end */
+/* ordering start */
+.v-start-xl {
+  display: flex;
+  align-items: var(--start);
+}
+
+.v-center-xl {
+  display: flex;
+  align-items: var(--center);
+}
+
+.v-end-xl {
+  display: flex;
+  align-items: var(--end);
+}
+
+.h-start-xl {
+  display: flex;
+  justify-content: var(--start);
+}
+
+.h-center-xl {
+  display: flex;
+  justify-content: var(--center);
+}
+
+.h-end-xl {
+  display: flex;
+  justify-content: var(--end);
+}
+
+.h-around-xl {
+  display: flex;
+  justify-content: var(--around);
+}
+
+.h-between-xl {
+  display: flex;
+  justify-content: var(--between);
+}
+/* ordering end */
+/* grow and shrink start */
+.grow-1-xl {
+  flex-grow: 1;
+}
+
+.shrink-0-xl {
+  flex-shrink: 0;
+}
+/* grow and shrink end */
+
+@media (max-width: 1550px) {
+  /* same widths with gutters start */
+  .row-1-lg > div {
+    width: var(--row1-div);
+  }
+
+  .row-2-lg > div {
+    width: var(--row2-div);
+  }
+
+  .row-3-lg > div {
+    width: var(--row3-div);
+  }
+
+  .row-4-lg > div {
+    width: var(--row4-div);
+  }
+
+  .row-5-lg > div {
+    width: var(--row5-div);
+  }
+
+  .row-6-lg > div {
+    width: var(--row6-div);
+  }
+
+  .row-7-lg > div {
+    width: var(--row7-div);
+  }
+
+  .row-8-lg > div {
+    width: var(--row8-div);
+  }
+
+  .row-9-lg > div {
+    width: var(--row9-div);
+  }
+
+  .row-10-lg > div {
+    width: var(--row10-div);
+  }
+
+  .row-11-lg > div {
+    width: var(--row11-div);
+  }
+
+  .row-12-lg > div {
+    width: var(--row12-div);
+  }
+  /* same widths with gutters end */
+  /* same widths without gutters start */
+  .row-1-lg.no-gutters > div {
+    width: var(--row1-g0-div);
+  }
+
+  .row-2-lg.no-gutters > div {
+    width: var(--row2-g0-div);
+  }
+
+  .row-3-lg.no-gutters > div {
+    width: var(--row3-g0-div);
+  }
+
+  .row-4-lg.no-gutters > div {
+    width: var(--row4-g0-div);
+  }
+
+  .row-5-lg.no-gutters > div {
+    width: var(--row5-g0-div);
+  }
+
+  .row-6-lg.no-gutters > div {
+    width: var(--row6-g0-div);
+  }
+
+  .row-7-lg.no-gutters > div {
+    width: var(--row7-g0-div);
+  }
+
+  .row-8-lg.no-gutters > div {
+    width: var(--row8-g0-div);
+  }
+
+  .row-9-lg.no-gutters > div {
+    width: var(--row9-g0-div);
+  }
+
+  .row-10-lg.no-gutters > div {
+    width: var(--row10-g0-div);
+  }
+
+  .row-11-lg.no-gutters > div {
+    width: var(--row11-g0-div);
+  }
+
+  .row-12-lg.no-gutters > div {
+    width: var(--row12-g0-div);
+  }
+  /* same widths without gutters end */
+  /* different widths with gutters start */
+  .row > .col-1-lg {
+    width: var(--row-col1);
+  }
+
+  .row > .col-2-lg {
+    width: var(--row-col2);
+  }
+
+  .row > .col-3-lg {
+    width: var(--row-col3);
+  }
+
+  .row > .col-4-lg {
+    width: var(--row-col4);
+  }
+
+  .row > .col-5-lg {
+    width: var(--row-col5);
+  }
+
+  .row > .col-6-lg {
+    width: var(--row-col6);
+  }
+
+  .row > .col-7-lg {
+    width: var(--row-col7);
+  }
+
+  .row > .col-8-lg {
+    width: var(--row-col8);
+  }
+
+  .row > .col-9-lg {
+    width: var(--row-col9);
+  }
+
+  .row > .col-10-lg {
+    width: var(--row-col10);
+  }
+
+  .row > .col-11-lg {
+    width: var(--row-col11);
+  }
+
+  .row > .col-12-lg {
+    width: var(--row-col12);
+  }
+  /* different widths with gutters end */
+  /* different widths without gutters start */
+  .row-lg.no-gutters > .col-1-lg {
+    width: var(--row-g0-col1);
+  }
+
+  .row-lg.no-gutters > .col-2-lg {
+    width: var(--row-g0-col2);
+  }
+
+  .row-lg.no-gutters > .col-3-lg {
+    width: var(--row-g0-col3);
+  }
+
+  .row-lg.no-gutters > .col-4-lg {
+    width: var(--row-g0-col4);
+  }
+
+  .row-lg.no-gutters > .col-5-lg {
+    width: var(--row-g0-col5);
+  }
+
+  .row-lg.no-gutters > .col-6-lg {
+    width: var(--row-g0-col6);
+  }
+
+  .row-lg.no-gutters > .col-7-lg {
+    width: var(--row-g0-col7);
+  }
+
+  .row-lg.no-gutters > .col-8-lg {
+    width: var(--row-g0-col8);
+  }
+
+  .row-lg.no-gutters > .col-9-lg {
+    width: var(--row-g0-col9);
+  }
+
+  .row-lg.no-gutters > .col-10-lg {
+    width: var(--row-g0-col10);
+  }
+
+  .row-lg.no-gutters > .col-11-lg {
+    width: var(--row-g0-col11);
+  }
+
+  .row-lg.no-gutters > .col-12-lg {
+    width: var(--row-g0-col12);
+  }
+  /* different widths without gutters end */
+  /* offsets with gutters start */
+  .row > .offset-0-lg {
+    margin-left: var(--row-offset0);
+  }
+
+  .row > .offset-1-lg {
+    margin-left: var(--row-offset1);
+  }
+
+  .row > .offset-2-lg {
+    margin-left: var(--row-offset2);
+  }
+
+  .row > .offset-3-lg {
+    margin-left: var(--row-offset3);
+  }
+
+  .row > .offset-4-lg {
+    margin-left: var(--row-offset4);
+  }
+
+  .row > .offset-5-lg {
+    margin-left: var(--row-offset5);
+  }
+
+  .row > .offset-6-lg {
+    margin-left: var(--row-offset6);
+  }
+
+  .row > .offset-7-lg {
+    margin-left: var(--row-offset7);
+  }
+
+  .row > .offset-8-lg {
+    margin-left: var(--row-offset8);
+  }
+
+  .row > .offset-9-lg {
+    margin-left: var(--row-offset9);
+  }
+
+  .row > .offset-10-lg {
+    margin-left: var(--row-offset10);
+  }
+
+  .row > .offset-11-lg {
+    margin-left: var(--row-offset11);
+  }
+
+  .row > .offset-12-lg {
+    margin-left: var(--row-offset12);
+  }
+  /* offsets with gutters end */
+  /* offsets without gutters start */
+  .row-lg.no-gutters > .offset-0-lg {
+    margin-left: var(--row-g0-offset0);
+  }
+
+  .row-lg.no-gutters > .offset-1-lg {
+    margin-left: var(--row-g0-offset1);
+  }
+
+  .row-lg.no-gutters > .offset-2-lg {
+    margin-left: var(--row-g0-offset2);
+  }
+
+  .row-lg.no-gutters > .offset-3-lg {
+    margin-left: var(--row-g0-offset3);
+  }
+
+  .row-lg.no-gutters > .offset-4-lg {
+    margin-left: var(--row-g0-offset4);
+  }
+
+  .row-lg.no-gutters > .offset-5-lg {
+    margin-left: var(--row-g0-offset5);
+  }
+
+  .row-lg.no-gutters > .offset-6-lg {
+    margin-left: var(--row-g0-offset6);
+  }
+
+  .row-lg.no-gutters > .offset-7-lg {
+    margin-left: var(--row-g0-offset7);
+  }
+
+  .row-lg.no-gutters > .offset-8-lg {
+    margin-left: var(--row-g0-offset8);
+  }
+
+  .row-lg.no-gutters > .offset-9-lg {
+    margin-left: var(--row-g0-offset9);
+  }
+
+  .row-lg.no-gutters > .offset-10-lg {
+    margin-left: var(--row-g0-offset10);
+  }
+
+  .row-lg.no-gutters > .offset-11-lg {
+    margin-left: var(--row-g0-offset11);
+  }
+
+  .row-lg.no-gutters > .offset-12-lg {
+    margin-left: var(--row-g0-offset12);
+  }
+  /* offsets without gutters end */
+  /* ordering start */
+  .v-start-lg {
+    display: flex;
+    align-items: var(--start);
+  }
+
+  .v-center-lg {
+    display: flex;
+    align-items: var(--center);
+  }
+
+  .v-end-lg {
+    display: flex;
+    align-items: var(--end);
+  }
+
+  .h-start-lg {
+    display: flex;
+    justify-content: var(--start);
+  }
+
+  .h-center-lg {
+    display: flex;
+    justify-content: var(--center);
+  }
+
+  .h-end-lg {
+    display: flex;
+    justify-content: var(--end);
+  }
+
+  .h-around-lg {
+    display: flex;
+    justify-content: var(--around);
+  }
+
+  .h-between-lg {
+    display: flex;
+    justify-content: var(--between);
+  }
+  /* ordering end */
+  /* grow and shrink start */
+  .grow-1-lg {
+    flex-grow: 1;
+  }
+
+  .shrink-0-lg {
+    flex-shrink: 0;
+  }
+  /* grow and shrink end */
+}
+
+@media (max-width: 1250px) {
+  /* same widths with gutters start */
+  .row-1-md > div {
+    width: var(--row1-div);
+  }
+
+  .row-2-md > div {
+    width: var(--row2-div);
+  }
+
+  .row-3-md > div {
+    width: var(--row3-div);
+  }
+
+  .row-4-md > div {
+    width: var(--row4-div);
+  }
+
+  .row-5-md > div {
+    width: var(--row5-div);
+  }
+
+  .row-6-md > div {
+    width: var(--row6-div);
+  }
+
+  .row-7-md > div {
+    width: var(--row7-div);
+  }
+
+  .row-8-md > div {
+    width: var(--row8-div);
+  }
+
+  .row-9-md > div {
+    width: var(--row9-div);
+  }
+
+  .row-10-md > div {
+    width: var(--row10-div);
+  }
+
+  .row-11-md > div {
+    width: var(--row11-div);
+  }
+
+  .row-12-md > div {
+    width: var(--row12-div);
+  }
+  /* same widths with gutters end */
+  /* same widths without gutters start */
+  .row-1-md.no-gutters > div {
+    width: var(--row1-g0-div);
+  }
+
+  .row-2-md.no-gutters > div {
+    width: var(--row2-g0-div);
+  }
+
+  .row-3-md.no-gutters > div {
+    width: var(--row3-g0-div);
+  }
+
+  .row-4-md.no-gutters > div {
+    width: var(--row4-g0-div);
+  }
+
+  .row-5-md.no-gutters > div {
+    width: var(--row5-g0-div);
+  }
+
+  .row-6-md.no-gutters > div {
+    width: var(--row6-g0-div);
+  }
+
+  .row-7-md.no-gutters > div {
+    width: var(--row7-g0-div);
+  }
+
+  .row-8-md.no-gutters > div {
+    width: var(--row8-g0-div);
+  }
+
+  .row-9-md.no-gutters > div {
+    width: var(--row9-g0-div);
+  }
+
+  .row-10-md.no-gutters > div {
+    width: var(--row10-g0-div);
+  }
+
+  .row-11-md.no-gutters > div {
+    width: var(--row11-g0-div);
+  }
+
+  .row-12-md.no-gutters > div {
+    width: var(--row12-g0-div);
+  }
+  /* same widths without gutters end */
+  /* different widths with gutters start */
+  .row > .col-1-md {
+    width: var(--row-col1);
+  }
+
+  .row > .col-2-md {
+    width: var(--row-col2);
+  }
+
+  .row > .col-3-md {
+    width: var(--row-col3);
+  }
+
+  .row > .col-4-md {
+    width: var(--row-col4);
+  }
+
+  .row > .col-5-md {
+    width: var(--row-col5);
+  }
+
+  .row > .col-6-md {
+    width: var(--row-col6);
+  }
+
+  .row > .col-7-md {
+    width: var(--row-col7);
+  }
+
+  .row > .col-8-md {
+    width: var(--row-col8);
+  }
+
+  .row > .col-9-md {
+    width: var(--row-col9);
+  }
+
+  .row > .col-10-md {
+    width: var(--row-col10);
+  }
+
+  .row > .col-11-md {
+    width: var(--row-col11);
+  }
+
+  .row > .col-12-md {
+    width: var(--row-col12);
+  }
+  /* different widths with gutters end */
+  /* different widths without gutters start */
+  .row-md.no-gutters > .col-1-md {
+    width: var(--row-g0-col1);
+  }
+
+  .row-md.no-gutters > .col-2-md {
+    width: var(--row-g0-col2);
+  }
+
+  .row-md.no-gutters > .col-3-md {
+    width: var(--row-g0-col3);
+  }
+
+  .row-md.no-gutters > .col-4-md {
+    width: var(--row-g0-col4);
+  }
+
+  .row-md.no-gutters > .col-5-md {
+    width: var(--row-g0-col5);
+  }
+
+  .row-md.no-gutters > .col-6-md {
+    width: var(--row-g0-col6);
+  }
+
+  .row-md.no-gutters > .col-7-md {
+    width: var(--row-g0-col7);
+  }
+
+  .row-md.no-gutters > .col-8-md {
+    width: var(--row-g0-col8);
+  }
+
+  .row-md.no-gutters > .col-9-md {
+    width: var(--row-g0-col9);
+  }
+
+  .row-md.no-gutters > .col-10-md {
+    width: var(--row-g0-col10);
+  }
+
+  .row-md.no-gutters > .col-11-md {
+    width: var(--row-g0-col11);
+  }
+
+  .row-md.no-gutters > .col-12-md {
+    width: var(--row-g0-col12);
+  }
+  /* different widths without gutters end */
+  /* offsets with gutters start */
+  .row > .offset-0-md {
+    margin-left: var(--row-offset0);
+  }
+
+  .row > .offset-1-md {
+    margin-left: var(--row-offset1);
+  }
+
+  .row > .offset-2-md {
+    margin-left: var(--row-offset2);
+  }
+
+  .row > .offset-3-md {
+    margin-left: var(--row-offset3);
+  }
+
+  .row > .offset-4-md {
+    margin-left: var(--row-offset4);
+  }
+
+  .row > .offset-5-md {
+    margin-left: var(--row-offset5);
+  }
+
+  .row > .offset-6-md {
+    margin-left: var(--row-offset6);
+  }
+
+  .row > .offset-7-md {
+    margin-left: var(--row-offset7);
+  }
+
+  .row > .offset-8-md {
+    margin-left: var(--row-offset8);
+  }
+
+  .row > .offset-9-md {
+    margin-left: var(--row-offset9);
+  }
+
+  .row > .offset-10-md {
+    margin-left: var(--row-offset10);
+  }
+
+  .row > .offset-11-md {
+    margin-left: var(--row-offset11);
+  }
+
+  .row > .offset-12-md {
+    margin-left: var(--row-offset12);
+  }
+  /* offsets with gutters end */
+  /* offsets without gutters start */
+  .row-md.no-gutters > .offset-0-md {
+    margin-left: var(--row-g0-offset0);
+  }
+
+  .row-md.no-gutters > .offset-1-md {
+    margin-left: var(--row-g0-offset1);
+  }
+
+  .row-md.no-gutters > .offset-2-md {
+    margin-left: var(--row-g0-offset2);
+  }
+
+  .row-md.no-gutters > .offset-3-md {
+    margin-left: var(--row-g0-offset3);
+  }
+
+  .row-md.no-gutters > .offset-4-md {
+    margin-left: var(--row-g0-offset4);
+  }
+
+  .row-md.no-gutters > .offset-5-md {
+    margin-left: var(--row-g0-offset5);
+  }
+
+  .row-md.no-gutters > .offset-6-md {
+    margin-left: var(--row-g0-offset6);
+  }
+
+  .row-md.no-gutters > .offset-7-md {
+    margin-left: var(--row-g0-offset7);
+  }
+
+  .row-md.no-gutters > .offset-8-md {
+    margin-left: var(--row-g0-offset8);
+  }
+
+  .row-md.no-gutters > .offset-9-md {
+    margin-left: var(--row-g0-offset9);
+  }
+
+  .row-md.no-gutters > .offset-10-md {
+    margin-left: var(--row-g0-offset10);
+  }
+
+  .row-md.no-gutters > .offset-11-md {
+    margin-left: var(--row-g0-offset11);
+  }
+
+  .row-md.no-gutters > .offset-12-md {
+    margin-left: var(--row-g0-offset12);
+  }
+  /* offsets without gutters end */
+  /* ordering start */
+  .v-start-md {
+    display: flex;
+    align-items: var(--start);
+  }
+
+  .v-center-md {
+    display: flex;
+    align-items: var(--center);
+  }
+
+  .v-end-md {
+    display: flex;
+    align-items: var(--end);
+  }
+
+  .h-start-md {
+    display: flex;
+    justify-content: var(--start);
+  }
+
+  .h-center-md {
+    display: flex;
+    justify-content: var(--center);
+  }
+
+  .h-end-md {
+    display: flex;
+    justify-content: var(--end);
+  }
+
+  .h-around-md {
+    display: flex;
+    justify-content: var(--around);
+  }
+
+  .h-between-md {
+    display: flex;
+    justify-content: var(--between);
+  }
+  /* ordering end */
+  /* grow and shrink start */
+  .grow-1-md {
+    flex-grow: 1;
+  }
+
+  .shrink-0-md {
+    flex-shrink: 0;
+  }
+  /* grow and shrink end */
+}
+
+@media (max-width: 950px) {
+  /* same widths with gutters start */
+  .row-1-sm > div {
+    width: var(--row1-div);
+  }
+
+  .row-2-sm > div {
+    width: var(--row2-div);
+  }
+
+  .row-3-sm > div {
+    width: var(--row3-div);
+  }
+
+  .row-4-sm > div {
+    width: var(--row4-div);
+  }
+
+  .row-5-sm > div {
+    width: var(--row5-div);
+  }
+
+  .row-6-sm > div {
+    width: var(--row6-div);
+  }
+
+  .row-7-sm > div {
+    width: var(--row7-div);
+  }
+
+  .row-8-sm > div {
+    width: var(--row8-div);
+  }
+
+  .row-9-sm > div {
+    width: var(--row9-div);
+  }
+
+  .row-10-sm > div {
+    width: var(--row10-div);
+  }
+
+  .row-11-sm > div {
+    width: var(--row11-div);
+  }
+
+  .row-12-sm > div {
+    width: var(--row12-div);
+  }
+  /* same widths with gutters end */
+  /* same widths without gutters start */
+  .row-1-sm.no-gutters > div {
+    width: var(--row1-g0-div);
+  }
+
+  .row-2-sm.no-gutters > div {
+    width: var(--row2-g0-div);
+  }
+
+  .row-3-sm.no-gutters > div {
+    width: var(--row3-g0-div);
+  }
+
+  .row-4-sm.no-gutters > div {
+    width: var(--row4-g0-div);
+  }
+
+  .row-5-sm.no-gutters > div {
+    width: var(--row5-g0-div);
+  }
+
+  .row-6-sm.no-gutters > div {
+    width: var(--row6-g0-div);
+  }
+
+  .row-7-sm.no-gutters > div {
+    width: var(--row7-g0-div);
+  }
+
+  .row-8-sm.no-gutters > div {
+    width: var(--row8-g0-div);
+  }
+
+  .row-9-sm.no-gutters > div {
+    width: var(--row9-g0-div);
+  }
+
+  .row-10-sm.no-gutters > div {
+    width: var(--row10-g0-div);
+  }
+
+  .row-11-sm.no-gutters > div {
+    width: var(--row11-g0-div);
+  }
+
+  .row-12-sm.no-gutters > div {
+    width: var(--row12-g0-div);
+  }
+  /* same widths without gutters end */
+  /* different widths with gutters start */
+  .row > .col-1-sm {
+    width: var(--row-col1);
+  }
+
+  .row > .col-2-sm {
+    width: var(--row-col2);
+  }
+
+  .row > .col-3-sm {
+    width: var(--row-col3);
+  }
+
+  .row > .col-4-sm {
+    width: var(--row-col4);
+  }
+
+  .row > .col-5-sm {
+    width: var(--row-col5);
+  }
+
+  .row > .col-6-sm {
+    width: var(--row-col6);
+  }
+
+  .row > .col-7-sm {
+    width: var(--row-col7);
+  }
+
+  .row > .col-8-sm {
+    width: var(--row-col8);
+  }
+
+  .row > .col-9-sm {
+    width: var(--row-col9);
+  }
+
+  .row > .col-10-sm {
+    width: var(--row-col10);
+  }
+
+  .row > .col-11-sm {
+    width: var(--row-col11);
+  }
+
+  .row > .col-12-sm {
+    width: var(--row-col12);
+  }
+  /* different widths with gutters end */
+  /* different widths without gutters start */
+  .row-sm.no-gutters > .col-1-sm {
+    width: var(--row-g0-col1);
+  }
+
+  .row-sm.no-gutters > .col-2-sm {
+    width: var(--row-g0-col2);
+  }
+
+  .row-sm.no-gutters > .col-3-sm {
+    width: var(--row-g0-col3);
+  }
+
+  .row-sm.no-gutters > .col-4-sm {
+    width: var(--row-g0-col4);
+  }
+
+  .row-sm.no-gutters > .col-5-sm {
+    width: var(--row-g0-col5);
+  }
+
+  .row-sm.no-gutters > .col-6-sm {
+    width: var(--row-g0-col6);
+  }
+
+  .row-sm.no-gutters > .col-7-sm {
+    width: var(--row-g0-col7);
+  }
+
+  .row-sm.no-gutters > .col-8-sm {
+    width: var(--row-g0-col8);
+  }
+
+  .row-sm.no-gutters > .col-9-sm {
+    width: var(--row-g0-col9);
+  }
+
+  .row-sm.no-gutters > .col-10-sm {
+    width: var(--row-g0-col10);
+  }
+
+  .row-sm.no-gutters > .col-11-sm {
+    width: var(--row-g0-col11);
+  }
+
+  .row-sm.no-gutters > .col-12-sm {
+    width: var(--row-g0-col12);
+  }
+  /* different widths without gutters end */
+  /* offsets with gutters start */
+  .row > .offset-0-sm {
+    margin-left: var(--row-offset0);
+  }
+
+  .row > .offset-1-sm {
+    margin-left: var(--row-offset1);
+  }
+
+  .row > .offset-2-sm {
+    margin-left: var(--row-offset2);
+  }
+
+  .row > .offset-3-sm {
+    margin-left: var(--row-offset3);
+  }
+
+  .row > .offset-4-sm {
+    margin-left: var(--row-offset4);
+  }
+
+  .row > .offset-5-sm {
+    margin-left: var(--row-offset5);
+  }
+
+  .row > .offset-6-sm {
+    margin-left: var(--row-offset6);
+  }
+
+  .row > .offset-7-sm {
+    margin-left: var(--row-offset7);
+  }
+
+  .row > .offset-8-sm {
+    margin-left: var(--row-offset8);
+  }
+
+  .row > .offset-9-sm {
+    margin-left: var(--row-offset9);
+  }
+
+  .row > .offset-10-sm {
+    margin-left: var(--row-offset10);
+  }
+
+  .row > .offset-11-sm {
+    margin-left: var(--row-offset11);
+  }
+
+  .row > .offset-12-sm {
+    margin-left: var(--row-offset12);
+  }
+  /* offsets with gutters end */
+  /* offsets without gutters start */
+  .row-sm.no-gutters > .offset-0-sm {
+    margin-left: var(--row-g0-offset0);
+  }
+
+  .row-sm.no-gutters > .offset-1-sm {
+    margin-left: var(--row-g0-offset1);
+  }
+
+  .row-sm.no-gutters > .offset-2-sm {
+    margin-left: var(--row-g0-offset2);
+  }
+
+  .row-sm.no-gutters > .offset-3-sm {
+    margin-left: var(--row-g0-offset3);
+  }
+
+  .row-sm.no-gutters > .offset-4-sm {
+    margin-left: var(--row-g0-offset4);
+  }
+
+  .row-sm.no-gutters > .offset-5-sm {
+    margin-left: var(--row-g0-offset5);
+  }
+
+  .row-sm.no-gutters > .offset-6-sm {
+    margin-left: var(--row-g0-offset6);
+  }
+
+  .row-sm.no-gutters > .offset-7-sm {
+    margin-left: var(--row-g0-offset7);
+  }
+
+  .row-sm.no-gutters > .offset-8-sm {
+    margin-left: var(--row-g0-offset8);
+  }
+
+  .row-sm.no-gutters > .offset-9-sm {
+    margin-left: var(--row-g0-offset9);
+  }
+
+  .row-sm.no-gutters > .offset-10-sm {
+    margin-left: var(--row-g0-offset10);
+  }
+
+  .row-sm.no-gutters > .offset-11-sm {
+    margin-left: var(--row-g0-offset11);
+  }
+
+  .row-sm.no-gutters > .offset-12-sm {
+    margin-left: var(--row-g0-offset12);
+  }
+  /* offsets without gutters end */
+  /* ordering start */
+  .v-start-sm {
+    display: flex;
+    align-items: var(--start);
+  }
+
+  .v-center-sm {
+    display: flex;
+    align-items: var(--center);
+  }
+
+  .v-end-sm {
+    display: flex;
+    align-items: var(--end);
+  }
+
+  .h-start-sm {
+    display: flex;
+    justify-content: var(--start);
+  }
+
+  .h-center-sm {
+    display: flex;
+    justify-content: var(--center);
+  }
+
+  .h-end-sm {
+    display: flex;
+    justify-content: var(--end);
+  }
+
+  .h-around-sm {
+    display: flex;
+    justify-content: var(--around);
+  }
+
+  .h-between-sm {
+    display: flex;
+    justify-content: var(--between);
+  }
+  /* ordering end */
+  /* grow and shrink start */
+  .grow-1-sm {
+    flex-grow: 1;
+  }
+
+  .shrink-0-sm {
+    flex-shrink: 0;
+  }
+  /* grow and shrink end */
+}
+
+@media (max-width: 750px) {
+  /* same widths with gutters start */
+  .row-1-xs > div {
+    width: var(--row1-div);
+  }
+
+  .row-2-xs > div {
+    width: var(--row2-div);
+  }
+
+  .row-3-xs > div {
+    width: var(--row3-div);
+  }
+
+  .row-4-xs > div {
+    width: var(--row4-div);
+  }
+
+  .row-5-xs > div {
+    width: var(--row5-div);
+  }
+
+  .row-6-xs > div {
+    width: var(--row6-div);
+  }
+
+  .row-7-xs > div {
+    width: var(--row7-div);
+  }
+
+  .row-8-xs > div {
+    width: var(--row8-div);
+  }
+
+  .row-9-xs > div {
+    width: var(--row9-div);
+  }
+
+  .row-10-xs > div {
+    width: var(--row10-div);
+  }
+
+  .row-11-xs > div {
+    width: var(--row11-div);
+  }
+
+  .row-12-xs > div {
+    width: var(--row12-div);
+  }
+  /* same widths with gutters end */
+  /* same widths without gutters start */
+  .row-1-xs.no-gutters > div {
+    width: var(--row1-g0-div);
+  }
+
+  .row-2-xs.no-gutters > div {
+    width: var(--row2-g0-div);
+  }
+
+  .row-3-xs.no-gutters > div {
+    width: var(--row3-g0-div);
+  }
+
+  .row-4-xs.no-gutters > div {
+    width: var(--row4-g0-div);
+  }
+
+  .row-5-xs.no-gutters > div {
+    width: var(--row5-g0-div);
+  }
+
+  .row-6-xs.no-gutters > div {
+    width: var(--row6-g0-div);
+  }
+
+  .row-7-xs.no-gutters > div {
+    width: var(--row7-g0-div);
+  }
+
+  .row-8-xs.no-gutters > div {
+    width: var(--row8-g0-div);
+  }
+
+  .row-9-xs.no-gutters > div {
+    width: var(--row9-g0-div);
+  }
+
+  .row-10-xs.no-gutters > div {
+    width: var(--row10-g0-div);
+  }
+
+  .row-11-xs.no-gutters > div {
+    width: var(--row11-g0-div);
+  }
+
+  .row-12-xs.no-gutters > div {
+    width: var(--row12-g0-div);
+  }
+  /* same widths without gutters end */
+  /* different widths with gutters start */
+  .row > .col-1-xs {
+    width: var(--row-col1);
+  }
+
+  .row > .col-2-xs {
+    width: var(--row-col2);
+  }
+
+  .row > .col-3-xs {
+    width: var(--row-col3);
+  }
+
+  .row > .col-4-xs {
+    width: var(--row-col4);
+  }
+
+  .row > .col-5-xs {
+    width: var(--row-col5);
+  }
+
+  .row > .col-6-xs {
+    width: var(--row-col6);
+  }
+
+  .row > .col-7-xs {
+    width: var(--row-col7);
+  }
+
+  .row > .col-8-xs {
+    width: var(--row-col8);
+  }
+
+  .row > .col-9-xs {
+    width: var(--row-col9);
+  }
+
+  .row > .col-10-xs {
+    width: var(--row-col10);
+  }
+
+  .row > .col-11-xs {
+    width: var(--row-col11);
+  }
+
+  .row > .col-12-xs {
+    width: var(--row-col12);
+  }
+  /* different widths with gutters end */
+  /* different widths without gutters start */
+  .row-xs.no-gutters > .col-1-xs {
+    width: var(--row-g0-col1);
+  }
+
+  .row-xs.no-gutters > .col-2-xs {
+    width: var(--row-g0-col2);
+  }
+
+  .row-xs.no-gutters > .col-3-xs {
+    width: var(--row-g0-col3);
+  }
+
+  .row-xs.no-gutters > .col-4-xs {
+    width: var(--row-g0-col4);
+  }
+
+  .row-xs.no-gutters > .col-5-xs {
+    width: var(--row-g0-col5);
+  }
+
+  .row-xs.no-gutters > .col-6-xs {
+    width: var(--row-g0-col6);
+  }
+
+  .row-xs.no-gutters > .col-7-xs {
+    width: var(--row-g0-col7);
+  }
+
+  .row-xs.no-gutters > .col-8-xs {
+    width: var(--row-g0-col8);
+  }
+
+  .row-xs.no-gutters > .col-9-xs {
+    width: var(--row-g0-col9);
+  }
+
+  .row-xs.no-gutters > .col-10-xs {
+    width: var(--row-g0-col10);
+  }
+
+  .row-xs.no-gutters > .col-11-xs {
+    width: var(--row-g0-col11);
+  }
+
+  .row-xs.no-gutters > .col-12-xs {
+    width: var(--row-g0-col12);
+  }
+  /* different widths without gutters end */
+  /* offsets with gutters start */
+  .row > .offset-0-xs {
+    margin-left: var(--row-offset0);
+  }
+
+  .row > .offset-1-xs {
+    margin-left: var(--row-offset1);
+  }
+
+  .row > .offset-2-xs {
+    margin-left: var(--row-offset2);
+  }
+
+  .row > .offset-3-xs {
+    margin-left: var(--row-offset3);
+  }
+
+  .row > .offset-4-xs {
+    margin-left: var(--row-offset4);
+  }
+
+  .row > .offset-5-xs {
+    margin-left: var(--row-offset5);
+  }
+
+  .row > .offset-6-xs {
+    margin-left: var(--row-offset6);
+  }
+
+  .row > .offset-7-xs {
+    margin-left: var(--row-offset7);
+  }
+
+  .row > .offset-8-xs {
+    margin-left: var(--row-offset8);
+  }
+
+  .row > .offset-9-xs {
+    margin-left: var(--row-offset9);
+  }
+
+  .row > .offset-10-xs {
+    margin-left: var(--row-offset10);
+  }
+
+  .row > .offset-11-xs {
+    margin-left: var(--row-offset11);
+  }
+
+  .row > .offset-12-xs {
+    margin-left: var(--row-offset12);
+  }
+  /* offsets with gutters end */
+  /* offsets without gutters start */
+  .row-xs.no-gutters > .offset-0-xs {
+    margin-left: var(--row-g0-offset0);
+  }
+
+  .row-xs.no-gutters > .offset-1-xs {
+    margin-left: var(--row-g0-offset1);
+  }
+
+  .row-xs.no-gutters > .offset-2-xs {
+    margin-left: var(--row-g0-offset2);
+  }
+
+  .row-xs.no-gutters > .offset-3-xs {
+    margin-left: var(--row-g0-offset3);
+  }
+
+  .row-xs.no-gutters > .offset-4-xs {
+    margin-left: var(--row-g0-offset4);
+  }
+
+  .row-xs.no-gutters > .offset-5-xs {
+    margin-left: var(--row-g0-offset5);
+  }
+
+  .row-xs.no-gutters > .offset-6-xs {
+    margin-left: var(--row-g0-offset6);
+  }
+
+  .row-xs.no-gutters > .offset-7-xs {
+    margin-left: var(--row-g0-offset7);
+  }
+
+  .row-xs.no-gutters > .offset-8-xs {
+    margin-left: var(--row-g0-offset8);
+  }
+
+  .row-xs.no-gutters > .offset-9-xs {
+    margin-left: var(--row-g0-offset9);
+  }
+
+  .row-xs.no-gutters > .offset-10 {
+    margin-left: var(--row-g0-offset10);
+  }
+
+  .row-xs.no-gutters > .offset-11-xs {
+    margin-left: var(--row-g0-offset11);
+  }
+
+  .row-xs.no-gutters > .offset-12-xs {
+    margin-left: var(--row-g0-offset12);
+  }
+  /* offsets without gutters end */
+  /* ordering start */
+  .v-start-xs {
+    display: flex;
+    align-items: var(--start);
+  }
+
+  .v-center-xs {
+    display: flex;
+    align-items: var(--center);
+  }
+
+  .v-end-xs {
+    display: flex;
+    align-items: var(--end);
+  }
+
+  .h-start-xs {
+    display: flex;
+    justify-content: var(--start);
+  }
+
+  .h-center-xs {
+    display: flex;
+    justify-content: var(--center);
+  }
+
+  .h-end-xs {
+    display: flex;
+    justify-content: var(--end);
+  }
+
+  .h-around-xs {
+    display: flex;
+    justify-content: var(--around);
+  }
+
+  .h-between-xs {
+    display: flex;
+    justify-content: var(--between);
+  }
+  /* ordering end */
+  /* grow and shrink start */
+  .grow-1-xs {
+    flex-grow: 1;
+  }
+
+  .shrink-0-xs {
+    flex-shrink: 0;
+  }
+  /* grow and shrink end */
+}
+/* edge calc bugfix start */
+@supports (-ms-ime-align: auto) {
+  [class^=row] > div {
+    margin-right: 19.9999px;
+  }
+}
+/* edge bugfixes end */

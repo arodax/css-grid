@@ -1,0 +1,23 @@
+{
+  "name": "@arodax/css-grid",
+  "version": "1.0.0",
+  "description": "CSS grid",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/arodax/css-grid.git"
+  },
+  "keywords": [
+    "css",
+    "grid"
+  ],
+  "author": "ARODAX a.s. <info@arodax.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/arodax/css-grid#readme"
+}
