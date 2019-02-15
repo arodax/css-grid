@@ -3,6 +3,7 @@
 ![Chrome 49+](https://img.shields.io/badge/Chrome-49+-informational.svg?logo=google%20chrome&logoColor=white&style=flat-square)
 ![Edge 16+](https://img.shields.io/badge/Edge-16+-informational.svg?logo=microsoft%20edge&logoColor=white&style=flat-square)
 ![Safari 12+](https://img.shields.io/badge/Safari-12+-informational.svg?logo=safari&logoColor=white&style=flat-square)
+[![](https://data.jsdelivr.com/v1/package/npm/@arodax/css-grid/badge)](https://www.jsdelivr.com/package/npm/@arodax/css-grid)
 
 CSS GRID
 ========
@@ -15,6 +16,11 @@ Demo: https://grid.arodax.com
 Licence: MIT
 
 
+Use with CDN
+-------------------------------
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@arodax/css-grid@2.0.1/index.min.css">
+```
 
 Download with a package manager
 -------------------------------
