@@ -20,7 +20,7 @@ Licence: MIT
 Use with CDN
 -------------------------------
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@arodax/css-grid@2.0.1/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@arodax/css-grid@2/index.min.css">
 ```
 
 Download with a package manager
