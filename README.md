@@ -2,7 +2,8 @@
 ![Firefox 31+](https://img.shields.io/badge/Firefox-31+-informational.svg?logo=mozilla%20firefox&logoColor=white&style=flat-square)
 ![Chrome 49+](https://img.shields.io/badge/Chrome-49+-informational.svg?logo=google%20chrome&logoColor=white&style=flat-square)
 ![Edge 16+](https://img.shields.io/badge/Edge-16+-informational.svg?logo=microsoft%20edge&logoColor=white&style=flat-square)
-![Safari 12+](https://img.shields.io/badge/Safari-12+-informational.svg?logo=safari&logoColor=white&style=flat-square)
+![Safari 9+](https://img.shields.io/badge/Safari-9+-informational.svg?logo=safari&logoColor=white&style=flat-square)
+![Opera 36+](https://img.shields.io/badge/Opera-36+-informational.svg?logo=opera&logoColor=white&style=flat-square)
 [![](https://data.jsdelivr.com/v1/package/npm/@arodax/css-grid/badge)](https://www.jsdelivr.com/package/npm/@arodax/css-grid)
 
 CSS GRID
